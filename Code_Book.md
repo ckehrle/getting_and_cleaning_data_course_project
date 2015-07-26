@@ -624,11 +624,11 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
   1. activity_id  integer value Range [1-6]
 
 ### File content subject_train.txt/subject_test.txt
-   1 .subject_id integer value 
+   1. subject_id integer value 
   
 ### File content activity_labels
-   1 .activity_id integer value Range [1-6]
-   2 .activity_name string value VALUES [WALKING, WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING]
+   1. activity_id integer value Range [1-6]
+   2. activity_name string value VALUES [WALKING, WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING]
 
 ## Target Data
    All values from column three on are average values. the average has been calculated per subject_id (Person) and activity. For details on field content see source data section, since columns names have been reused as possible
