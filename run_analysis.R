@@ -36,8 +36,8 @@ features_processed <-   tbl_df(read.csv('features.txt',
                                         header=FALSE,sep=" ",
                                         col.names=c("feature_position",
                                                     "feature_name"))) %>%
-    mutate(is_mean = as.numeric(grepl('mean()',feature_name)),
-           is_std = as.numeric(grepl('std()',feature_name)),
+    mutate(is_mean = as.numeric(grepl('mean\\(\\)',feature_name)),
+           is_std = as.numeric(grepl('std\\(\\)',feature_name)),
            is_export_column = is_mean + is_std,
            fwf_column = ifelse(is_export_column>=1 ,16,-16))
 # Task 2. Extract only means and stds and use meaningful names
@@ -74,3 +74,4 @@ cbind(subject_FULL,activity_compl,X_FULL)   %>%
         melt(id=c("subject_id","activity_name")) %>%
         write.table('tidy_data.txt',
                     row.names=FALSE)
+
