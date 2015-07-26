@@ -1,4 +1,5 @@
 library(dplyr)
+library(reshape2)
 # Helper fucntion to append the splitted sets to one file
 # in case target file exists it will be deleted and re-created.
 append_all<- function(target_file,source_files)
@@ -19,7 +20,7 @@ required_files=c('features.txt',
                  'X_test.txt',
                  'y_test.txt',
                  'subject_test.txt')
-#check if all madantory files are present
+#check if all madantory files are presentno
 lapply(required_files,function(x){if(!file.exists(x)){stop("mandatory file not found! Please run run_loading.R first")}})
 # Fullset files for the concatenated files
 f_X_full='X_full.txt'
@@ -70,5 +71,6 @@ cbind(subject_FULL,activity_compl,X_FULL)   %>%
         group_by(subject_id,activity_name)  %>% 
         summarise_each(funs(mean))          %>% 
         select(-activity_id)                %>%
+        melt(id=c("subject_id","activity_name")) %>%
         write.table('tidy_data.txt',
                     row.names=FALSE)
