@@ -34,3 +34,4 @@ The conactenation order is always train then test. So the row order is preserved
 From the file 'features.txt' a table of field names is extracted for the measurements. Four columns are created in that table which are used to check whether the feature is a average("mean") or a standard derivation value. With that a flag "is_export_column" is created which is used to filter the wanted columns for extraction as well as the column_names. With the field list generated from features the wanted fields (means and standard derivation) are loaded from X_full
 Then then the y_full set is enriched with the acticity names. 
 The enriched data is now combined by column binding. so that now subject, activities and measure are now in one set.
+Now the set is grouped by subject_id and activity, for each column the averages are calculated on that grouping. then all but the id columns are transposed to a key value pair for long data format.
