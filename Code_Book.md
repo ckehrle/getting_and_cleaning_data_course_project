@@ -627,3 +627,87 @@ tBodyGyroJerkMean
 * file content activity_labels
    1 .activity_id integer value Range [1-6]
    2 .activity_name string value VALUES [WALKING, WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING]
+## Target Data
+   All values from column three on are average values. the average has been calculated per subject_id (Person) and activity. For details on field content see source data section, since columns names have been reused as possible
+* Target fields
+ 1. subject_id integer value 
+ 2. activity_name string value VALUES [WALKING, WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING]
+ 3. tBodyAcc.mean...X averaged floating point value
+ 4. tBodyAcc.mean...Y averaged floating point value
+ 5. tBodyAcc.mean...Z averaged floating point value
+ 6. tBodyAcc.std...X averaged floating point value
+ 7. tBodyAcc.std...Y averaged floating point value
+ 8. tBodyAcc.std...Z averaged floating point value
+ 9. tGravityAcc.mean...X averaged floating point value
+ 10. tGravityAcc.mean...Y averaged floating point value
+ 11. tGravityAcc.mean...Z averaged floating point value
+ 12. tGravityAcc.std...X averaged floating point value
+ 13. tGravityAcc.std...Y averaged floating point value
+ 14. tGravityAcc.std...Z averaged floating point value
+ 15. tBodyAccJerk.mean...X averaged floating point value
+ 16. tBodyAccJerk.mean...Y averaged floating point value
+ 17. tBodyAccJerk.mean...Z averaged floating point value
+ 18. tBodyAccJerk.std...X averaged floating point value
+ 19. tBodyAccJerk.std...Y averaged floating point value
+ 20. tBodyAccJerk.std...Z averaged floating point value
+ 21. tBodyGyro.mean...X averaged floating point value
+ 22. tBodyGyro.mean...Y averaged floating point value
+ 23. tBodyGyro.mean...Z averaged floating point value
+ 24. tBodyGyro.std...X averaged floating point value
+ 25. tBodyGyro.std...Y averaged floating point value
+ 26. tBodyGyro.std...Z averaged floating point value
+ 27. tBodyGyroJerk.mean...X averaged floating point value
+ 28. tBodyGyroJerk.mean...Y averaged floating point value
+ 29. tBodyGyroJerk.mean...Z averaged floating point value
+ 30. tBodyGyroJerk.std...X averaged floating point value
+ 31. tBodyGyroJerk.std...Y averaged floating point value
+ 32. tBodyGyroJerk.std...Z averaged floating point value
+ 33. tBodyAccMag.mean..	 averaged floating point value
+ 34. tBodyAccMag.std..	 averaged floating point value
+ 35. tGravityAccMag.mean..	 averaged floating point value
+ 36. tGravityAccMag.std..	 averaged floating point value
+ 37. tBodyAccJerkMag.mean..	 averaged floating point value
+ 38. tBodyAccJerkMag.std..	 averaged floating point value
+ 39. tBodyGyroMag.mean..	 averaged floating point value
+ 40. tBodyGyroMag.std..	 averaged floating point value
+ 41. tBodyGyroJerkMag.mean..	 averaged floating point value
+ 42. tBodyGyroJerkMag.std..	 averaged floating point value
+ 43. fBodyAcc.mean...X	 averaged floating point value
+ 44. fBodyAcc.mean...Y	 averaged floating point value
+ 45. fBodyAcc.mean...Z	 averaged floating point value
+ 46. fBodyAcc.std...X	 averaged floating point value
+ 47. fBodyAcc.std...Y	 averaged floating point value
+ 48. fBodyAcc.std...Z	 averaged floating point value
+ 49. fBodyAcc.meanFreq...X	 averaged floating point value
+ 50. fBodyAcc.meanFreq...Y	 averaged floating point value
+ 51. fBodyAcc.meanFreq...Z	 averaged floating point value
+ 52. fBodyAccJerk.mean...X	 averaged floating point value
+ 53. fBodyAccJerk.mean...Y	 averaged floating point value
+ 54. fBodyAccJerk.mean...Z	 averaged floating point value
+ 55. fBodyAccJerk.std...X	 averaged floating point value
+ 56. fBodyAccJerk.std...Y	 averaged floating point value
+ 57. fBodyAccJerk.std...Z	 averaged floating point value
+ 58. fBodyAccJerk.meanFreq...X	 averaged floating point value
+ 59. fBodyAccJerk.meanFreq...Y	 averaged floating point value
+ 60. fBodyAccJerk.meanFreq...Z	 averaged floating point value
+ 61. fBodyGyro.mean...X	 averaged floating point value
+ 62. fBodyGyro.mean...Y	 averaged floating point value
+ 63. fBodyGyro.mean...Z	 averaged floating point value
+ 64. fBodyGyro.std...X	 averaged floating point value
+ 65. fBodyGyro.std...Y	 averaged floating point value
+ 66. fBodyGyro.std...Z	 averaged floating point value
+ 67. fBodyGyro.meanFreq...X	 averaged floating point value
+ 68. fBodyGyro.meanFreq...Y	 averaged floating point value
+ 69. fBodyGyro.meanFreq...Z	 averaged floating point value
+ 70. fBodyAccMag.mean..	 averaged floating point value
+ 71. fBodyAccMag.std..	 averaged floating point value
+ 72. fBodyAccMag.meanFreq..	 averaged floating point value
+ 73. fBodyBodyAccJerkMag.mean..	 averaged floating point value
+ 74. fBodyBodyAccJerkMag.std..	 averaged floating point value
+ 75. fBodyBodyAccJerkMag.meanFreq..	 averaged floating point value
+ 76. fBodyBodyGyroMag.mean..	 averaged floating point value
+ 77. fBodyBodyGyroMag.std..	 averaged floating point value
+ 78. fBodyBodyGyroMag.meanFreq..	 averaged floating point value
+ 79. fBodyBodyGyroJerkMag.mean..	 averaged floating point value
+ 80. fBodyBodyGyroJerkMag.std..	 averaged floating point value
+ 81. fBodyBodyGyroJerkMag.meanFreq.. averaged floating point value
